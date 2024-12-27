@@ -1,0 +1,98 @@
+Program ID: 4
+My execution stack contains:
+(a;(b;(a = 14;(b = a / 7;Print(b)))))
+My dictionary contains:
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+(b;(a = 14;(b = a / 7;Print(b))))
+a
+My dictionary contains:
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+(b;(a = 14;(b = a / 7;Print(b))))
+My dictionary contains:
+a-> 0
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+(a = 14;(b = a / 7;Print(b)))
+b
+My dictionary contains:
+a-> 0
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+(a = 14;(b = a / 7;Print(b)))
+My dictionary contains:
+a-> 0
+b-> 0
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+(b = a / 7;Print(b))
+a = 14
+My dictionary contains:
+a-> 0
+b-> 0
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+(b = a / 7;Print(b))
+My dictionary contains:
+a-> 14
+b-> 0
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+Print(b)
+b = a / 7
+My dictionary contains:
+a-> 14
+b-> 0
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+Print(b)
+My dictionary contains:
+a-> 14
+b-> 2
+My output list contains:
+File table: 
+Heap: 
+
+Program ID: 4
+My execution stack contains:
+My dictionary contains:
+a-> 14
+b-> 2
+My output list contains:
+2
+File table: 
+Heap: 
+

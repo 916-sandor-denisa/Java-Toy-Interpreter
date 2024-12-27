@@ -87,7 +87,7 @@ public class Interpreter {
         //int a; int b; a=2+5; b=a/7; Print(b);
         IStatement ex4 = new CompStatement(new VarDeclStatement("a", new IntType()),
                 new CompStatement(new VarDeclStatement("b", new IntType()),
-                        new CompStatement(new AssignStatement("a", new ValueExpression(new IntValue(14))),
+                        new CompStatement(new AssignStatement("a", new ValueExpression(new StringValue("14"))),
                                 new CompStatement(new AssignStatement("b", new ArithmeticExpression(new VarExpression("a"), new ValueExpression(new
                                         IntValue(7)), 4)), new PrintStatement(new VarExpression("b"))))));
 
