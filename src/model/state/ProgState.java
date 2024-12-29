@@ -40,6 +40,7 @@ public class ProgState {
     private int getNextId() {
         return ++nextId;
     }
+    public int getId() {return id;}
 
     public MyIStack<IStatement> getStack() { return execStack;}
     public void setStack(MyStack<IStatement> execStack) { this.execStack = execStack; }

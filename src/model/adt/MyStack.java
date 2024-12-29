@@ -2,6 +2,7 @@ package model.adt;
 
 import exceptions.MyADTException;
 
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
@@ -33,6 +34,11 @@ public class MyStack<T> implements MyIStack<T> {
     @Override
     public int size(){
         return this.stack.size();
+    }
+
+    @Override
+    public List<T> getValues() {
+        return this.stack.subList(0,this.stack.size());
     }
 
     @Override

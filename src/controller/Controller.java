@@ -155,4 +155,25 @@ public class Controller {
         });
         repo.setProgramsList(states);
     }
+
+    public void executeOneStepForAll() throws InterruptedException {
+        this.executor = Executors.newFixedThreadPool(2);
+        repo.setProgramsList(removeCompletedPrg(repo.getProgramsList()));
+        List<ProgState> program_states=repo.getProgramsList();
+
+        if(!program_states.isEmpty())
+        {
+            try
+            {
+                oneStepForAll(repo.getProgramsList());
+            }
+            catch (InterruptedException error)
+            {
+                System.out.println(error.getMessage());
+            }
+            //repo.setProgramsList(removeCompletedPrg(repo.getProgramsList()));
+            //executor.shutdown();
+            //conservativeGarbageCollector(program_states);
+        }
+    }
 }
